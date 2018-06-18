@@ -11,8 +11,8 @@ public class TestConstructionOfASentence {
     public void test_build_a_sentence_with_one_word(){
 
         Sentence sentence = new Sentence("go");
-        String simpleSentence = sentence.getWord();
-        assertEquals("go", simpleSentence);
+        String simpleSentence = sentence.returnSentens();
+        assertEquals("go!", simpleSentence);
     }
 
 }

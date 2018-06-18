@@ -12,4 +12,10 @@ public class Sentence {
     public String getWord() {
         return word;
     }
+
+    public String returnSentens(){
+        String sentens = word + "!";
+
+        return sentens;
+    }
 }
