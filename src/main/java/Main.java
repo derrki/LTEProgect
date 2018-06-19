@@ -3,7 +3,14 @@
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("test");
-        System.out.println("test git");
+
+        Verb [] verb = {new Verb("know", "знати"), new Verb("work", "працювати"), new Verb("feel", "відчувати")};
+        Pronoun pronoun = new Pronoun("I", "я");
+        Sentence sentence = new Sentence();
+
+        for (int i = 0; i < verb.length; i ++){
+            System.out.println(sentence.buildSentens(pronoun.getValue(), verb[i].getValue()));
+        }
+
     }
 }
