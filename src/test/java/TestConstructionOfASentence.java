@@ -15,4 +15,11 @@ public class TestConstructionOfASentence {
         assertEquals("go!", simpleSentence);
     }
 
+    @Test
+    public void test_return_translation_of_the_word(){
+        Pronoun pronoun = new Pronoun();
+        String translation = pronoun.getTranslation("I");
+        assertEquals("я", translation);
+    }
+
 }
