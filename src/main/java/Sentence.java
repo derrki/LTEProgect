@@ -5,6 +5,8 @@ public class Sentence {
 
     private String word;
 
+    public Sentence(){}
+
     public Sentence(String word) {
         this.word = word;
     }
@@ -17,5 +19,9 @@ public class Sentence {
         String sentens = word + "!";
 
         return sentens;
+    }
+
+    public String buildSentens(String pronoun, String verb) {
+        return pronoun + " " + verb + ".";
     }
 }

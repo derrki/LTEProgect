@@ -16,6 +16,16 @@ public class TestConstructionOfASentence {
     }
 
     @Test
+    public void test_build_a_sentence_with_two_words(){
+        String expectedSentens = "I go.";
+        Sentence sentense = new Sentence();
+        Pronoun pronoun = new Pronoun("I", "я");
+        Verb verb = new Verb("go", "йду");
+        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getValue());
+        assertEquals(expectedSentens, actualSentens);
+    }
+
+    @Test
     public void test_return_translation_of_the_word(){
         Pronoun pronoun = new Pronoun("I", "я");
         String translation = pronoun.getTranslation();
