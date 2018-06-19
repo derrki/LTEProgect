@@ -3,10 +3,21 @@
  */
 public class Pronoun {
 
-    String word;
+    private String pronounValue;
+    private String pronounTranslation;
 
-    public String getTranslation(String word) {
+    public Pronoun(){}
 
-        return "я";
+    public Pronoun(String value, String translation){
+        this.pronounValue = value;
+        this.pronounTranslation = translation;
+    }
+
+    public String getValue(){
+        return pronounValue;
+    }
+
+    public String getTranslation() {
+        return pronounTranslation;
     }
 }
