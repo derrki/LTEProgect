@@ -22,6 +22,10 @@ public class Sentence {
     }
 
     public String buildSentens(String pronoun, String verb) {
-        return pronoun + " " + verb + ".";
+        return pronoun.toUpperCase() + " " + verb + ".";
+    }
+
+    public String sentenseToUpperCase(String str) {
+        return "я йду";
     }
 }
