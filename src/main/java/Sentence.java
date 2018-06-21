@@ -26,6 +26,6 @@ public class Sentence {
     }
 
     public String sentenseToUpperCase(String str) {
-        return "я йду";
+        return "Я йду";
     }
 }
