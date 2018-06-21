@@ -36,7 +36,9 @@ public class TestConstructionOfASentence {
     @Test
     public void test_return_the_eginning_of_the_sentence_with_capital_letters(){
         Sentence sentense = new Sentence();
-        assertTrue("Я йду".equals(sentense.sentenseToUpperCase("я йду")));
+        Pronoun pronoun = new Pronoun("I", "я");
+        Verb verb = new Verb("go", "йду");
+        assertTrue("Я йду".equals(sentense.sentenseToUpperCase(pronoun, verb)));
     }
 
 }

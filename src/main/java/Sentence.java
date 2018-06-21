@@ -5,6 +5,10 @@ public class Sentence {
 
     private String word;
 
+    private Pronoun pronoun;
+
+    private Verb verb;
+
     public Sentence(){}
 
     public Sentence(String word) {
@@ -25,7 +29,7 @@ public class Sentence {
         return pronoun.toUpperCase() + " " + verb + ".";
     }
 
-    public String sentenseToUpperCase(String str) {
-        return "я йду";
+    public String sentenseToUpperCase(Pronoun pronoun, Verb verb) {
+        return pronoun.getTranslation().toUpperCase() + " " + verb.getTranslation();
     }
 }
