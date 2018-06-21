@@ -6,8 +6,6 @@ public class Pronoun {
     private String pronounValue;
     private String pronounTranslation;
 
-    public Pronoun(){}
-
     public Pronoun(String value, String translation){
         this.pronounValue = value;
         this.pronounTranslation = translation;
