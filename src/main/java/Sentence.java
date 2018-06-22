@@ -5,10 +5,6 @@ public class Sentence {
 
     private String word;
 
-    private Pronoun pronoun;
-
-    private Verb verb;
-
     public Sentence(){}
 
     public Sentence(String word) {

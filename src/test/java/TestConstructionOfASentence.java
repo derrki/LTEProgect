@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -7,6 +8,11 @@ import static junit.framework.Assert.assertTrue;
  * 1. Make it work. 2. Make it right. 3. Make it fast
  */
 public class TestConstructionOfASentence {
+
+    @Before
+    public void init(){
+
+    }
 
     @Test
     public void test_build_a_sentence_with_one_word(){
