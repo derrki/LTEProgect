@@ -20,4 +20,5 @@ public class Verb {
     public String getTranslation() {
         return verbTranslation;
     }
+
 }

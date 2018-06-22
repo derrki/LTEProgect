@@ -18,4 +18,8 @@ public class Pronoun {
     public String getTranslation() {
         return pronounTranslation;
     }
+
+    public String retutnIWidthCapitalLeters() {
+        return "I";
+    }
 }
