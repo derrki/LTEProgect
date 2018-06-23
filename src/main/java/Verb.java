@@ -12,7 +12,6 @@ public class Verb {
         this.verbTranslation = translation;
     }
 
-
     public String getValue() {
         return verbValue;
     }

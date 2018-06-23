@@ -11,6 +11,10 @@ public class Pronoun {
         this.pronounTranslation = translation;
     }
 
+    public Pronoun() {
+
+    }
+
     public String getValue(){
         return pronounValue;
     }
@@ -20,6 +24,19 @@ public class Pronoun {
     }
 
     public String retutnIWidthCapitalLeters() {
-        return "I";
+
+        if (pronounValue == "i" || pronounValue == "I"){
+            return "I";
+        } else {
+            return pronounValue;
+        }
+    }
+
+    public void setPronounValue(String value) {
+        this.pronounValue = value;
+    }
+
+    public void setPronounTranslation(String translation){
+        this.pronounValue = translation;
     }
 }

@@ -38,10 +38,4 @@ public class TestConstructionOfASentence {
         Verb verb = new Verb("go", "йду");
         assertTrue("Я йду".equals(sentense.sentenseToUpperCase(pronoun, verb)));
     }
-
-    @Test
-    public void test_return_pronoun_i_with_capital_leters() {
-        assertEquals("I", pronoun.retutnIWidthCapitalLeters());
-    }
-
 }
