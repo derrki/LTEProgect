@@ -6,20 +6,19 @@ public class Pronoun {
     private String pronounValue;
     private String pronounTranslation;
 
+    public Pronoun() {
+    }
+
     public Pronoun(String value, String translation){
         this.pronounValue = value;
         this.pronounTranslation = translation;
     }
 
-    public Pronoun() {
-
-    }
-
-    public String getValue(){
+    public String getPronounValue(){
         return pronounValue;
     }
 
-    public String getTranslation() {
+    public String getPronounTranslation() {
         return pronounTranslation;
     }
 
@@ -32,11 +31,11 @@ public class Pronoun {
         }
     }
 
-    public void setPronounValue(String value) {
-        this.pronounValue = value;
+    public void setPronounValue(String pronounValue) {
+        this.pronounValue = pronounValue;
     }
 
-    public void setPronounTranslation(String translation){
-        this.pronounValue = translation;
+    public void setPronounTranslation(String pronounTranslation){
+        this.pronounValue = pronounTranslation;
     }
 }

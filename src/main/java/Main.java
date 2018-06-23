@@ -11,8 +11,8 @@ public class Main {
         Sentence sentence = new Sentence();
 
         for (int i = 0; i < verb.length; i ++){
-            System.out.println(sentence.buildSentens(pronoun.getValue(), verb[i].getValue()));
-            System.out.println(sentence.buildSentens(pronoun.getTranslation(),verb[i].getTranslation()));
+            System.out.println(sentence.buildSentens(pronoun.getPronounValue(), verb[i].getVerbValue()));
+            System.out.println(sentence.buildSentens(pronoun.getPronounTranslation(),verb[i].getVerbTranslation()));
         }
         System.out.println(sentence.sentenseToUpperCase(pronoun, verb[1]));
     }

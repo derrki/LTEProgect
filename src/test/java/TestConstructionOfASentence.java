@@ -1,4 +1,3 @@
-import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -23,13 +22,13 @@ public class TestConstructionOfASentence {
     public void test_build_a_sentence_with_two_words() {
         String expectedSentens = "I go.";
         Verb verb = new Verb("go", "йду");
-        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getValue());
+        String actualSentens = sentense.buildSentens(pronoun.getPronounValue(), verb.getVerbValue());
         assertEquals(expectedSentens, actualSentens);
     }
 
     @Test
     public void test_return_translation_of_the_word() {
-        String translation = pronoun.getTranslation();
+        String translation = pronoun.getPronounTranslation();
         assertEquals("я", translation);
     }
 
