@@ -29,4 +29,7 @@ public class Verb {
         return verbTranslation;
     }
 
+    public String returnEndingVerbS(String verb) {
+        return verb + "es";
+    }
 }
