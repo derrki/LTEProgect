@@ -5,7 +5,7 @@ public class Verb {
 
     private String verbValue;
     private String verbTranslation;
-
+    private String [] verbAlternatuveTranslation;
     public  Verb(){}
 
     public Verb(String value, String translation) {
@@ -13,11 +13,20 @@ public class Verb {
         this.verbTranslation = translation;
     }
 
+    public Verb(String verbValue, String[] verbAlternatuveTranslation){
+        this.verbValue = verbValue;
+        this.verbAlternatuveTranslation = verbAlternatuveTranslation;
+    }
+
     public void setVerbValue(String verbValue) {
         this.verbValue = verbValue;
     }
 
-    public void setVerbTranslation(String verbTranslation) {
+    public String[] getVerbAlternatuveTranslation() {
+        return verbAlternatuveTranslation;
+    }
+
+    public void setVerbTranslation(String verbTranslation)  {
         this.verbTranslation = verbTranslation;
     }
 
