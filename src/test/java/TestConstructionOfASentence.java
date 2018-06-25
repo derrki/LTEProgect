@@ -22,13 +22,13 @@ public class TestConstructionOfASentence {
     public void test_build_a_sentence_with_two_words() {
         String expectedSentens = "I go.";
         SimpleVerb verb = new SimpleVerb("go", "йду");
-        String actualSentens = sentense.buildSentens(pronoun.getPronounValue(), verb.getVerbValue());
+        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getVerbValue());
         assertEquals(expectedSentens, actualSentens);
     }
 
     @Test
     public void test_return_translation_of_the_word() {
-        String translation = pronoun.getPronounTranslation();
+        String translation = pronoun.getTranslation();
         assertEquals("я", translation);
     }
 

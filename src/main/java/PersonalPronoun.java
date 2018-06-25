@@ -3,39 +3,39 @@
  */
 public class PersonalPronoun implements Pronoun{
 
-    private String pronounValue;
-    private String pronounTranslation;
+    private String value;
+    private String translation;
 
     public PersonalPronoun() {
     }
 
     public PersonalPronoun(String value, String translation){
-        this.pronounValue = value;
-        this.pronounTranslation = translation;
+        this.value = value;
+        this.translation = translation;
     }
 
-    public String getPronounValue(){
-        return pronounValue;
+    public void setValue(String value) {
+        this.value = value;
     }
 
-    public String getPronounTranslation() {
-        return pronounTranslation;
+    public void setTranslation(String translation){
+        this.value = translation;
+    }
+
+    public String getValue(){
+        return value;
+    }
+
+    public String getTranslation() {
+        return translation;
     }
 
     public String retutnIWidthCapitalLeters() {
 
-        if (pronounValue == "i" || pronounValue == "I"){
+        if (value == "i" || value == "I"){
             return "I";
         } else {
-            return pronounValue;
+            return value;
         }
-    }
-
-    public void setPronounValue(String pronounValue) {
-        this.pronounValue = pronounValue;
-    }
-
-    public void setPronounTranslation(String pronounTranslation){
-        this.pronounValue = pronounTranslation;
     }
 }

@@ -26,6 +26,6 @@ public class Sentence {
     }
 
     public String sentenseToUpperCase(PersonalPronoun pronoun, SimpleVerb verb) {
-        return pronoun.getPronounTranslation().toUpperCase() + " " + verb.getVerbTranslation();
+        return pronoun.getTranslation().toUpperCase() + " " + verb.getTranslation();
     }
 }

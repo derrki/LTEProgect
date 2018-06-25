@@ -8,7 +8,7 @@ public class TestClassPronoun {
 
     @Test
     public void test_return_pronoun_I_with_capital_leters_if_user_entered_i() {
-        pronoun.setPronounValue("i");
+        pronoun.setValue("i");
         String expectedPronoun = "I";
         String actualPronoun = pronoun.retutnIWidthCapitalLeters();
         assertEquals(expectedPronoun, actualPronoun);
@@ -16,7 +16,7 @@ public class TestClassPronoun {
 
     @Test
     public void test_return_pronoun_with_capital_leters() {
-        pronoun.setPronounValue("I");
+        pronoun.setValue("I");
         String expectedPronoun = "I";
         String actualPronoun = pronoun.retutnIWidthCapitalLeters();
         assertEquals(expectedPronoun, actualPronoun);
@@ -24,7 +24,7 @@ public class TestClassPronoun {
 
     @Test
     public void test_returning_different_pronoun() {
-        pronoun.setPronounValue("you");
+        pronoun.setValue("you");
         String expectedPronoun = "you";
         String actualPronoun = pronoun.retutnIWidthCapitalLeters();
         assertEquals(expectedPronoun, actualPronoun);

@@ -3,39 +3,43 @@
  */
 public class SimpleVerb implements Verb{
 
-    private String verbValue;
-    private String verbTranslation;
+    private String value;
+    private String translation;
     private String [] verbAlternatuveTranslation;
     public SimpleVerb(){}
 
     public SimpleVerb(String value, String translation) {
-        this.verbValue = value;
-        this.verbTranslation = translation;
+        this.value = value;
+        this.translation = translation;
     }
 
     public SimpleVerb(String verbValue, String[] verbAlternatuveTranslation){
-        this.verbValue = verbValue;
+        this.value = verbValue;
         this.verbAlternatuveTranslation = verbAlternatuveTranslation;
     }
 
-    public void setVerbValue(String verbValue) {
-        this.verbValue = verbValue;
+    public void setValue(String verbValue) {
+        this.value = verbValue;
     }
 
     public String[] getVerbAlternatuveTranslation() {
         return verbAlternatuveTranslation;
     }
 
-    public void setVerbTranslation(String verbTranslation)  {
-        this.verbTranslation = verbTranslation;
+    public void setTranslation(String translation)  {
+        this.translation = translation;
     }
 
-    public String getVerbValue() {
-        return verbValue;
+    public String getValue() {
+        return value;
     }
 
-    public String getVerbTranslation() {
-        return verbTranslation;
+    public String getTranslation() {
+        return translation;
+    }
+
+    public String returnRealTranslite(Pronoun pronoun) {
+        return null;
     }
 
     public String returnEndingVerbS(String verb) {

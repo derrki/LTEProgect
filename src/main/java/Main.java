@@ -17,8 +17,8 @@ public class Main {
         String[] translite = verbs.getVerbAlternatuveTranslation();
 
         for (int i = 0; i < translite.length; i++) {
-            System.out.println(sentence.buildSentens(pronoun[i].getPronounValue(), verbs.getVerbValue()));
-            System.out.println(sentence.buildSentens(pronoun[i].getPronounTranslation(), translite[i]));
+            System.out.println(sentence.buildSentens(pronoun[i].getValue(), verbs.getValue()));
+            System.out.println(sentence.buildSentens(pronoun[i].getTranslation(), translite[i]));
         }
     }
 }
