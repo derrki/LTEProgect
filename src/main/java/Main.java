@@ -4,13 +4,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        Pronoun [] pronoun = {new Pronoun("i", "я"), new Pronoun("you", "ти"),
-                new Pronoun("we", "ми"), new Pronoun("you", "ви"), new Pronoun("they", "вони"),
-                new Pronoun("he", "він"), new Pronoun("she", "вона"), new Pronoun("it", "воно")};
+        PersonalPronoun[] pronoun = {new PersonalPronoun("i", "я"), new PersonalPronoun("you", "ти"),
+                new PersonalPronoun("we", "ми"), new PersonalPronoun("you", "ви"), new PersonalPronoun("they", "вони"),
+                new PersonalPronoun("he", "він"), new PersonalPronoun("she", "вона"), new PersonalPronoun("it", "воно")};
 
         Sentence sentence = new Sentence();
                                                     // я       ти       ми      ви         вони    він    вона    воно
-        Verb verbs =  new Verb("know", new String[]{"знаю", "знаєш", "знаєм", "знаєте", "знають", "знає", "знає", "знає"});
+        SimpleVerb verbs =  new SimpleVerb("know", new String[]{"знаю", "знаєш", "знаєм", "знаєте", "знають", "знає", "знає", "знає"});
 
 
 
