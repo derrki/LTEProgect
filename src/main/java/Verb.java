@@ -7,4 +7,5 @@ public interface Verb extends Word {
     String getTranslation();
 
     String returnRealTranslite(Pronoun pronoun);
+
 }

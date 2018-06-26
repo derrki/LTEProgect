@@ -22,7 +22,7 @@ public class TestConstructionOfASentence {
     public void test_build_a_sentence_with_two_words() {
         String expectedSentens = "I go.";
         SimpleVerb verb = new SimpleVerb("go", "йду");
-        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getVerbValue());
+        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getValue());
         assertEquals(expectedSentens, actualSentens);
     }
 

@@ -6,6 +6,8 @@ public class PersonalPronoun implements Pronoun{
     private String value;
     private String translation;
 
+    enum personalPronoun {I, you, we, they, he, she, it }
+
     public PersonalPronoun() {
     }
 
