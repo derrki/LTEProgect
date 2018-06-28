@@ -4,8 +4,8 @@
 public class Main {
     public static void main(String[] args) {
 
-
         Word personalPronoun = new Pronoun();
         System.out.println(personalPronoun.getValue() + " " + personalPronoun.getTranslation());
+
     }
 }
