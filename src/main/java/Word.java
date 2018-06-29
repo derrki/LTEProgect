@@ -6,12 +6,9 @@ public class Word {
     private String value;
     private String translation;
 
-    public Word(){}
-
     public Word(String value, String translation){
         this.value = value;
         this.translation = translation;
-        System.out.println("word");
     }
 
     public String getValue() {
@@ -28,5 +25,13 @@ public class Word {
 
     public void setTranslation(String translation) {
         this.translation = translation;
+    }
+
+    @Override
+    public String toString() {
+        return "Word{" +
+                "value='" + value + '\'' +
+                ", translation='" + translation + '\'' +
+                '}';
     }
 }

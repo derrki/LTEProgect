@@ -4,8 +4,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        Word personalPronoun = new Pronoun();
-        System.out.println(personalPronoun.getValue() + " " + personalPronoun.getTranslation());
+        Sentence sentence = new Sentence();
+
+        Word personalPronoun = new Pronoun("They", "вони");
+        Word simpleVerb = new Verb("run", "бігти");
+        System.out.println(sentence.buildSentens(personalPronoun, simpleVerb));
 
     }
 }

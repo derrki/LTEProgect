@@ -21,8 +21,8 @@ public class Sentence {
         return sentens;
     }
 
-    public String buildSentens(String pronoun, String verb) {
-        return pronoun.toUpperCase() + " " + verb + ".";
+    public String buildSentens(Word pronoun, Word verb) {
+        return pronoun + " " + verb + ".";
     }
 
     public String sentenseToUpperCase(Pronoun pronoun, Verb verb) {

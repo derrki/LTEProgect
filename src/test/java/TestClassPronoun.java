@@ -4,7 +4,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class TestClassPronoun {
 
-    Pronoun pronoun = new Pronoun();
+    Pronoun pronoun = new Pronoun("I", "я");
 
     @Test
     public void test_return_pronoun_I_with_capital_leters_if_user_entered_i() {

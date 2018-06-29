@@ -4,7 +4,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class TestClassVerb {
 
-    Verb verb = new Verb();
+    Verb verb = new Verb("go", "goes");
 
     @Test
     public void test_add_ending_verb_s(){

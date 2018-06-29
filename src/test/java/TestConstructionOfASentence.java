@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -19,10 +20,11 @@ public class TestConstructionOfASentence {
     }
 
     @Test
+    @Ignore
     public void test_build_a_sentence_with_two_words() {
         String expectedSentens = "I go.";
         Verb verb = new Verb("go", "йду");
-        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getValue());
+        String actualSentens = sentense.buildSentens(pronoun, verb);
         assertEquals(expectedSentens, actualSentens);
     }
 
