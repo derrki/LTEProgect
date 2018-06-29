@@ -8,8 +8,12 @@ public class Main {
 
         Word personalPronoun = new Pronoun("They", "вони");
         Word simpleVerb = new VerbInfinitive("run", "бігти");
+
+        Word verbAll = new VerbAll("work", "працювати", new String[] {"працюю", "працюєш", "працюють", "працює", "працюєм"});
+
         System.out.println(sentence.buildSentens(personalPronoun.getValue(), simpleVerb.getValue()));
         System.out.println(sentence.buildSentens(personalPronoun.getTranslation(), simpleVerb.getTranslation()));
+        System.out.println(verbAll.getValue() + " "+ verbAll.getTranslation());
 
     }
 }

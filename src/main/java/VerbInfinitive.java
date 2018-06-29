@@ -1,8 +1,15 @@
 public class VerbInfinitive extends Word{
 
+    private String translationInfinitive;
+
      public VerbInfinitive(String value, String translation){
          super(value, translation);
+         translationInfinitive = translation;
      }
+
+    public String getTranslationInfinitive() {
+        return translationInfinitive;
+    }
 
     public String returnEndingVerbS(String verb) {
         return verb + "es";
