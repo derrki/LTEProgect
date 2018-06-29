@@ -25,7 +25,7 @@ public class Sentence {
         return pronoun + " " + verb + ".";
     }
 
-   // public String sentenseToUpperCase(Pronoun pronoun, VerbInfinitive verb) {
+   // public String sentenseToUpperCase(Pronoun pronoun, ClassesOfWords.VerbInfinitive verb) {
     //    return pronoun.getTranslation().toUpperCase() + " " + verb.getTranslation();
    // }
 }

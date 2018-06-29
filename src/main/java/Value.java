@@ -1,4 +1,6 @@
-public class Value extends Word{
+import ClassesOfWords.ContentWords;
+
+public class Value extends ContentWords {
     String valueWord [];
 
 

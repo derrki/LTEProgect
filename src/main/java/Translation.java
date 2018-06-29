@@ -1,4 +1,6 @@
-public class Translation extends Word{
+import ClassesOfWords.ContentWords;
+
+public class Translation extends ContentWords {
   String translationWord [];
 
     public Translation(String[] translationWord) {

@@ -1,3 +1,5 @@
+import ClassesOfWords.VerbInfinitive;
+
 public class VerbAll extends VerbInfinitive {
 
     String [] allTranslite;
