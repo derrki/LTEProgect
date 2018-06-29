@@ -1,14 +1,15 @@
-public class Pronoun extends Word{
+public class Pronoun extends WordDictionary{
 
-    public Pronoun(String value, String translation){
-        super(value, translation);
+
+    public Pronoun(Value valueWord, Translation translationWord) {
+        super(valueWord, translationWord);
     }
 
     public String retutnIWidthCapitalLeters() {
-        if (super.getValue() == "i" || super.getValue() == "I"){
+        if (super.getValue().toString() == "i" || super.getValue().toString() == "I"){
             return "I";
         } else {
-            return super.getValue();
+            return super.getValue().toString();
         }
     }
 

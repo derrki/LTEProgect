@@ -2,9 +2,8 @@ public class VerbInfinitive extends Word{
 
     private String translationInfinitive;
 
-     public VerbInfinitive(String value, String translation){
-         super(value, translation);
-         translationInfinitive = translation;
+     public VerbInfinitive(Value value, Translation translation){
+
      }
 
     public String getTranslationInfinitive() {

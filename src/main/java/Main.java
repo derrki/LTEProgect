@@ -6,14 +6,11 @@ public class Main {
 
         Sentence sentence = new Sentence();
 
-        Word personalPronoun = new Pronoun("They", "вони");
-        Word simpleVerb = new VerbInfinitive("run", "бігти");
+        Value value = new Value("They", null);
+        Translation translation  = new Translation("вони", null);
 
-        Word verbAll = new VerbAll("work", "працювати", new String[] {"працюю", "працюєш", "працюють", "працює", "працюєм"});
-
-        System.out.println(sentence.buildSentens(personalPronoun.getValue(), simpleVerb.getValue()));
-        System.out.println(sentence.buildSentens(personalPronoun.getTranslation(), simpleVerb.getTranslation()));
-        System.out.println(verbAll.getValue() + " "+ verbAll.getTranslation());
+        Pronoun pronoun = new Pronoun(value, translation);
+        System.out.println(pronoun.getValue() + " " + pronoun.getTranslation());
 
     }
 }

@@ -1,15 +1,20 @@
-public class Translation {
-    String translation;
+public class Translation extends Word{
+  String translationWord [];
 
-    public String getTranslation() {
-        return translation;
+    public Translation(String[] translationWord) {
+        this.translationWord = translationWord;
     }
 
-    public void setTranslation(String translation) {
-        this.translation = translation;
+    public Translation(String value, String[] translationWord) {
+        super(value);
+        this.translationWord = translationWord;
     }
 
-    public Translation(String translation) {
-        this.translation = translation;
+    public String[] getTranslationWord() {
+        return translationWord;
+    }
+
+    public void setTranslationWord(String[] translationWord) {
+        this.translationWord = translationWord;
     }
 }

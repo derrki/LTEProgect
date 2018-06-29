@@ -4,11 +4,11 @@
 public class Word {
 
     private String value;
-    private String translation;
 
-    public Word(String value, String translation){
+    public Word(){}
+
+    public Word(String value){
         this.value = value;
-        this.translation = translation;
     }
 
     public String getValue() {
@@ -19,17 +19,8 @@ public class Word {
         this.value = value;
     }
 
-    public String getTranslation() {
-        return translation;
-    }
-
-    public void setTranslation(String translation) {
-        this.translation = translation;
-    }
-
     @Override
     public String toString() {
-        return "value='" + value  + " " +
-                ", translation='" + translation;
+        return "value = " + value;
     }
 }
