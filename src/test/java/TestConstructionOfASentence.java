@@ -23,8 +23,8 @@ public class TestConstructionOfASentence {
     @Ignore
     public void test_build_a_sentence_with_two_words() {
         String expectedSentens = "I go.";
-        Verb verb = new Verb("go", "йду");
-        String actualSentens = sentense.buildSentens(pronoun, verb);
+        VerbInfinitive verb = new VerbInfinitive("go", "йду");
+        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getValue());
         assertEquals(expectedSentens, actualSentens);
     }
 
@@ -36,7 +36,7 @@ public class TestConstructionOfASentence {
 
     @Test
     public void test_return_the_eginning_of_the_sentence_with_capital_letters() {
-        Verb verb = new Verb("go", "йду");
+        VerbInfinitive verb = new VerbInfinitive("go", "йду");
         assertTrue("Я йду".equals(sentense.sentenseToUpperCase(pronoun, verb)));
     }
 }

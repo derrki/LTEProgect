@@ -29,9 +29,7 @@ public class Word {
 
     @Override
     public String toString() {
-        return "Word{" +
-                "value='" + value + '\'' +
-                ", translation='" + translation + '\'' +
-                '}';
+        return "value='" + value  + " " +
+                ", translation='" + translation;
     }
 }

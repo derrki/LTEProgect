@@ -21,11 +21,11 @@ public class Sentence {
         return sentens;
     }
 
-    public String buildSentens(Word pronoun, Word verb) {
+    public String buildSentens(String pronoun, String verb) {
         return pronoun + " " + verb + ".";
     }
 
-    public String sentenseToUpperCase(Pronoun pronoun, Verb verb) {
+    public String sentenseToUpperCase(Pronoun pronoun, VerbInfinitive verb) {
         return pronoun.getTranslation().toUpperCase() + " " + verb.getTranslation();
     }
 }

@@ -7,8 +7,9 @@ public class Main {
         Sentence sentence = new Sentence();
 
         Word personalPronoun = new Pronoun("They", "вони");
-        Word simpleVerb = new Verb("run", "бігти");
-        System.out.println(sentence.buildSentens(personalPronoun, simpleVerb));
+        Word simpleVerb = new VerbInfinitive("run", "бігти");
+        System.out.println(sentence.buildSentens(personalPronoun.getValue(), simpleVerb.getValue()));
+        System.out.println(sentence.buildSentens(personalPronoun.getTranslation(), simpleVerb.getTranslation()));
 
     }
 }
