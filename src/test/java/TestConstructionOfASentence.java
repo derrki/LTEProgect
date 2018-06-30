@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertTrue;
 public class TestConstructionOfASentence {
 
 //    Sentence sentense = new Sentence();
-//    Pronoun pronoun = new Pronoun("I", "я");
+//    ClassesOfWords.Pronoun pronoun = new ClassesOfWords.Pronoun("I", "я");
 //
 //    @Test
 //    public void test_build_a_sentence_with_one_word() {

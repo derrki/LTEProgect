@@ -5,7 +5,7 @@ public class Sentence {
 
     public Sentence(){}
 
-   // public String sentenseToUpperCase(Pronoun pronoun, ClassesOfWords.VerbInfinitive verb) {
+   // public String sentenseToUpperCase(ClassesOfWords.Pronoun pronoun, ClassesOfWords.VerbInfinitive verb) {
     //    return pronoun.getUkrainianWord().toUpperCase() + " " + verb.getUkrainianWord();
    // }
 }

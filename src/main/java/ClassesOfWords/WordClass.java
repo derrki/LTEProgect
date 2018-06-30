@@ -1,7 +1,8 @@
 package ClassesOfWords;
 
-public abstract class WordClass{
+public class WordClass extends Word{
 
-    private EnglishWord englishWord;
-
+    public WordClass(String value) {
+        super(value);
+    }
 }
