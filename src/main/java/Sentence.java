@@ -3,29 +3,9 @@
  */
 public class Sentence {
 
-    private String word;
-
     public Sentence(){}
 
-    public Sentence(String word) {
-        this.word = word;
-    }
-
-    public String getWord() {
-        return word;
-    }
-
-    public String returnSentens(){
-        String sentens = word + "!";
-
-        return sentens;
-    }
-
-    public String buildSentens(String pronoun, String verb) {
-        return pronoun + " " + verb + ".";
-    }
-
    // public String sentenseToUpperCase(Pronoun pronoun, ClassesOfWords.VerbInfinitive verb) {
-    //    return pronoun.getTranslation().toUpperCase() + " " + verb.getTranslation();
+    //    return pronoun.getUkrainianWord().toUpperCase() + " " + verb.getUkrainianWord();
    // }
 }

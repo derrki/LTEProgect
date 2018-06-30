@@ -1,3 +1,5 @@
+import ClassesOfWords.EnglishWord;
+
 /**
  * 1. Make it work. 2. Make it right. 3. Make it fast
  */
@@ -6,11 +8,11 @@ public class Main {
 
         Sentence sentence = new Sentence();
 
-        Value value = new Value("They", null);
+        EnglishWord englishWord = new EnglishWord("They", null);
         Translation translation  = new Translation("вони", null);
 
-        Pronoun pronoun = new Pronoun(value, translation);
-        System.out.println(pronoun.getValue() + " " + pronoun.getTranslation());
+        Pronoun pronoun = new Pronoun(englishWord, translation);
+        System.out.println(pronoun.getEnglishWord() + " " + pronoun.getTranslation());
 
     }
 }

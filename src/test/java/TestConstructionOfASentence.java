@@ -24,13 +24,13 @@ public class TestConstructionOfASentence {
 //    public void test_build_a_sentence_with_two_words() {
 //        String expectedSentens = "I go.";
 //        ClassesOfWords.VerbInfinitive verb = new ClassesOfWords.VerbInfinitive("go", "йду");
-//        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getValue());
+//        String actualSentens = sentense.buildSentens(pronoun.getEnglishWord(), verb.getEnglishWord());
 //        assertEquals(expectedSentens, actualSentens);
 //    }
 //
 //    @Test
 //    public void test_return_translation_of_the_word() {
-//        String translation = pronoun.getTranslation();
+//        String translation = pronoun.getUkrainianWord();
 //        assertEquals("я", translation);
 //    }
 //

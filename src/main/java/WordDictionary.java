@@ -1,19 +1,21 @@
+import ClassesOfWords.EnglishWord;
+
 public class WordDictionary {
 
-    Value value;
+    EnglishWord englishWord;
     Translation translation;
 
-    public WordDictionary(Value valueWord, Translation translationWord) {
-        this.value = valueWord;
+    public WordDictionary(EnglishWord englishWordWord, Translation translationWord) {
+        this.englishWord = englishWordWord;
         this.translation = translationWord;
     }
 
-    public Value getValue() {
-        return value;
+    public EnglishWord getEnglishWord() {
+        return englishWord;
     }
 
-    public void setValue(Value value) {
-        this.value = value;
+    public void setEnglishWord(EnglishWord englishWord) {
+        this.englishWord = englishWord;
     }
 
     public Translation getTranslation() {

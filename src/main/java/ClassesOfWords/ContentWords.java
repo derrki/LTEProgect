@@ -8,11 +8,11 @@ import jdk.internal.org.objectweb.asm.tree.analysis.Value;
 public class ContentWords extends WordClass {
 
     private Value value;
-    private Translation translation;
+    private UkrainianWord ukrainianWord;
 
-    public ContentWords(Value value, Translation translation) {
+    public ContentWords(Value value, UkrainianWord ukrainianWord) {
         this.value = value;
-        this.translation = translation;
+        this.ukrainianWord = ukrainianWord;
     }
 
     public Value getValue() {
@@ -23,11 +23,11 @@ public class ContentWords extends WordClass {
         this.value = value;
     }
 
-    public Translation getTranslation() {
-        return translation;
+    public UkrainianWord getUkrainianWord() {
+        return ukrainianWord;
     }
 
-    public void setTranslation(Translation translation) {
-        this.translation = translation;
+    public void setUkrainianWord(UkrainianWord ukrainianWord) {
+        this.ukrainianWord = ukrainianWord;
     }
 }

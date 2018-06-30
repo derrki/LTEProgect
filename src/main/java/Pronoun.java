@@ -1,15 +1,17 @@
+import ClassesOfWords.EnglishWord;
+
 public class Pronoun extends WordDictionary{
 
 
-    public Pronoun(Value valueWord, Translation translationWord) {
-        super(valueWord, translationWord);
+    public Pronoun(EnglishWord englishWordWord, Translation translationWord) {
+        super(englishWordWord, translationWord);
     }
 
     public String retutnIWidthCapitalLeters() {
-        if (super.getValue().toString() == "i" || super.getValue().toString() == "I"){
+        if (super.getEnglishWord().toString() == "i" || super.getEnglishWord().toString() == "I"){
             return "I";
         } else {
-            return super.getValue().toString();
+            return super.getEnglishWord().toString();
         }
     }
 

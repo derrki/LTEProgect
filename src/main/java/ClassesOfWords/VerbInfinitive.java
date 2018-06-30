@@ -1,12 +1,11 @@
 package ClassesOfWords;
 
-import ClassesOfWords.ContentWords;
 import jdk.internal.org.objectweb.asm.tree.analysis.Value;
 
 public class VerbInfinitive extends ContentWords {
 
-    public VerbInfinitive(Value value, Translation translation) {
-        super(value, translation);
+    public VerbInfinitive(Value value, UkrainianWord ukrainianWord) {
+        super(value, ukrainianWord);
     }
 
     public String returnEndingVerbS(String verb) {

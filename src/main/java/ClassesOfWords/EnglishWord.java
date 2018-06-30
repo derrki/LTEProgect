@@ -2,10 +2,9 @@ package ClassesOfWords;
 
 import jdk.internal.org.objectweb.asm.tree.analysis.Value;
 
-public class Noun extends ContentWords {
+public class EnglishWord extends ContentWords {
 
-    public Noun(Value value, UkrainianWord ukrainianWord) {
+    public EnglishWord(Value value, UkrainianWord ukrainianWord) {
         super(value, ukrainianWord);
     }
-
 }
