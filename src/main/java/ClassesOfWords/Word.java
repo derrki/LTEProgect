@@ -8,6 +8,9 @@ public class Word {
         this.value = value;
     }
 
+    public Word() {
+    }
+
     public String getValue() {
         return value;
     }
