@@ -5,7 +5,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class TestClassVerbInfinitive {
 
-    //VerbInfinitive verb = new VerbInfinitive("go", "goes");
+    //ClassesOfWords.VerbInfinitive verb = new ClassesOfWords.VerbInfinitive("go", "goes");
 //@Ignore
 //    @Test
 //    public void test_return_of_the_verb_in_the_infinitive(){

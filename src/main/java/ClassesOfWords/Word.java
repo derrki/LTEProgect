@@ -1,13 +1,10 @@
-/**
- * 1. Make it work. 2. Make it right. 3. Make it fast
- */
+package ClassesOfWords;
+
 public class Word {
 
     private String value;
 
-    public Word(){}
-
-    public Word(String value){
+    public Word(String value) {
         this.value = value;
     }
 
@@ -17,10 +14,5 @@ public class Word {
 
     public void setValue(String value) {
         this.value = value;
-    }
-
-    @Override
-    public String toString() {
-        return "value = " + value;
     }
 }

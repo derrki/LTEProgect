@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertTrue;
 public class TestConstructionOfASentence {
 
 //    Sentence sentense = new Sentence();
-//    Pronoun pronoun = new Pronoun("I", "я");
+//    ClassesOfWords.Pronoun pronoun = new ClassesOfWords.Pronoun("I", "я");
 //
 //    @Test
 //    public void test_build_a_sentence_with_one_word() {
@@ -23,20 +23,20 @@ public class TestConstructionOfASentence {
 //    @Ignore
 //    public void test_build_a_sentence_with_two_words() {
 //        String expectedSentens = "I go.";
-//        VerbInfinitive verb = new VerbInfinitive("go", "йду");
-//        String actualSentens = sentense.buildSentens(pronoun.getValue(), verb.getValue());
+//        ClassesOfWords.VerbInfinitive verb = new ClassesOfWords.VerbInfinitive("go", "йду");
+//        String actualSentens = sentense.buildSentens(pronoun.getEnglishWord(), verb.getEnglishWord());
 //        assertEquals(expectedSentens, actualSentens);
 //    }
 //
 //    @Test
 //    public void test_return_translation_of_the_word() {
-//        String translation = pronoun.getTranslation();
+//        String translation = pronoun.getUkrainianWord();
 //        assertEquals("я", translation);
 //    }
 //
 //    @Test
 //    public void test_return_the_eginning_of_the_sentence_with_capital_letters() {
-//        VerbInfinitive verb = new VerbInfinitive("go", "йду");
+//        ClassesOfWords.VerbInfinitive verb = new ClassesOfWords.VerbInfinitive("go", "йду");
 //        assertTrue("Я йду".equals(sentense.sentenseToUpperCase(pronoun, verb)));
 //    }
 }
