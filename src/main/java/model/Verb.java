@@ -1,4 +1,4 @@
-package ClassesOfWords;
+package model;
 
 public class Verb extends WordClass {
     public Verb (){}

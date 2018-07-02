@@ -1,6 +1,4 @@
-package ClassesOfWords;
-
-import ClassesOfWords.EnglishWord;
+package model;
 
 public class Pronoun extends WordClass{
 

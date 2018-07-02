@@ -1,6 +1,4 @@
-package ClassesOfWords;
-
-import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+package model;
 
 public class EnglishWord extends Word {
 

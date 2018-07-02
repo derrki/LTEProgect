@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertTrue;
 public class TestConstructionOfASentence {
 
 //    Sentence sentense = new Sentence();
-//    ClassesOfWords.Pronoun pronoun = new ClassesOfWords.Pronoun("I", "я");
+//    model.Pronoun pronoun = new model.Pronoun("I", "я");
 //
 //    @Test
 //    public void test_build_a_sentence_with_one_word() {
@@ -23,7 +23,7 @@ public class TestConstructionOfASentence {
 //    @Ignore
 //    public void test_build_a_sentence_with_two_words() {
 //        String expectedSentens = "I go.";
-//        ClassesOfWords.VerbInfinitive verb = new ClassesOfWords.VerbInfinitive("go", "йду");
+//        model.VerbInfinitive verb = new model.VerbInfinitive("go", "йду");
 //        String actualSentens = sentense.buildSentens(pronoun.getEnglishWord(), verb.getEnglishWord());
 //        assertEquals(expectedSentens, actualSentens);
 //    }
@@ -36,7 +36,7 @@ public class TestConstructionOfASentence {
 //
 //    @Test
 //    public void test_return_the_eginning_of_the_sentence_with_capital_letters() {
-//        ClassesOfWords.VerbInfinitive verb = new ClassesOfWords.VerbInfinitive("go", "йду");
+//        model.VerbInfinitive verb = new model.VerbInfinitive("go", "йду");
 //        assertTrue("Я йду".equals(sentense.sentenseToUpperCase(pronoun, verb)));
 //    }
 }

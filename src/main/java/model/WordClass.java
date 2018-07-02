@@ -1,4 +1,4 @@
-package ClassesOfWords;
+package model;
 
 public class WordClass extends Word{
 

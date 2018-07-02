@@ -1,8 +1,7 @@
-import ClassesOfWords.EnglishWord;
-import ClassesOfWords.Pronoun;
-import ClassesOfWords.UkrainianWord;
-import ClassesOfWords.VocabularyPair;
-import sun.java2d.pipe.ValidatePipe;
+import model.EnglishWord;
+import model.Pronoun;
+import model.UkrainianWord;
+import model.VocabularyPair;
 
 /**
  * 1. Make it work. 2. Make it right. 3. Make it fast
