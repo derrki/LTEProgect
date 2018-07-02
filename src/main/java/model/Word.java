@@ -1,4 +1,4 @@
-package ClassesOfWords;
+package model;
 
 public class Word {
 
@@ -6,6 +6,9 @@ public class Word {
 
     public Word(String value) {
         this.value = value;
+    }
+
+    public Word() {
     }
 
     public String getValue() {

@@ -4,7 +4,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class TestClassPronoun {
 //
-//    ClassesOfWords.Pronoun pronoun = new ClassesOfWords.Pronoun("I", "я");
+//    model.Pronoun pronoun = new model.Pronoun("I", "я");
 //
 //    @Test
 //    public void test_return_pronoun_I_with_capital_leters_if_user_entered_i() {
