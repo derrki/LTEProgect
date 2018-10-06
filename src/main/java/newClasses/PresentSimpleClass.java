@@ -2,7 +2,11 @@ package newClasses;
 
 public class PresentSimpleClass {
 
-   static String getSentens(String pronoun, String verb){
+   static String getSentensEngl(String pronoun, String verb){
+        return pronoun + " " + verb;
+    }
+
+    static String getSentensUA(String pronoun, String verb){
         return pronoun + " " + verb;
     }
 }

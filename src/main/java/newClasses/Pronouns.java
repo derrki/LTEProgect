@@ -1,9 +1,15 @@
 package newClasses;
 
 public class Pronouns {
-   static final String[] pronouns = {"I","you","we", "they"};
+   static final String[] pronounsEngl = {"I","you","we", "they"};
+   static final String[] pronounsUa = {"я","ти","ми", "вони"};
 
-   static public String[] getPronouns(){
-        return pronouns;
+   static public String[] getPronounsEngl(){
+        return pronounsEngl;
     }
+
+    static public String[] getPronounsUa(){
+        return pronounsUa;
+    }
+
 }

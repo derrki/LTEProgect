@@ -1,7 +1,8 @@
 package newClasses;
 
 public class Verbs {
-   static final String [] verbs = {"go", "work","want"};
+   static final String [] verbsEngl = {"go", "work","want"};
+   static final String [] verbsUa = {"йти", "працювати","хотіти"};
 
     public Verbs(){}
     public Verbs(String arg){
@@ -9,6 +10,10 @@ public class Verbs {
     }
 
    static   public String [] getVerb(){
-        return verbs;
+        return verbsEngl;
+    }
+
+    static   public String [] getVerbsUa(){
+        return verbsUa;
     }
 }
