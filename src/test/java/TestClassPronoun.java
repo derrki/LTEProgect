@@ -1,27 +1,23 @@
+import model.EnglishWord;
+import model.Pronoun;
+import model.UkrainianWord;
+import model.Word;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
 public class TestClassPronoun {
-//
-//    model.Pronoun pronoun = new model.Pronoun("I", "я");
-//
-//    @Test
-//    public void test_return_pronoun_I_with_capital_leters_if_user_entered_i() {
-//        pronoun.setEnglishWord("i");
-//        String expectedPronoun = "I";
-//        String actualPronoun = pronoun.retutnIWidthCapitalLeters();
-//        assertEquals(expectedPronoun, actualPronoun);
-//    }
-//
-//    @Test
-//    public void test_return_pronoun_with_capital_leters() {
-//        pronoun.setEnglishWord("I");
-//        String expectedPronoun = "I";
-//        String actualPronoun = pronoun.retutnIWidthCapitalLeters();
-//        assertEquals(expectedPronoun, actualPronoun);
-//    }
-//
+
+    Pronoun pronoun = new Pronoun(new EnglishWord("I"), new UkrainianWord("я"));
+
+    @Test
+    public void test_return_pronoun_I_with_capital_leters_if_user_entered_i() {
+        String expectedPronoun = "I";
+        String actualPronoun = pronoun.returnIWidthCapitalLeters();
+        assertEquals(expectedPronoun, actualPronoun);
+    }
+
+
 //    @Test
 //    public void test_returning_different_pronoun() {
 //        pronoun.setEnglishWord("you");
