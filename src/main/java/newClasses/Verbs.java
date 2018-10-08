@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Verbs {
-   static final String [] verbsEngl = {"want", "like","need", "do", "live", "work", "know", "get", "see", "hear"};
+   static final String [] verbsEngl = {"want", "like","need", "do", "live", "work", "know", "get", "see", "hear", "CAN", "MAY", "MUST"};
 
    Map mapGo = new HashMap();
 
@@ -12,7 +12,8 @@ public class Verbs {
         return mapGo;
     }
 
-    static final String [] verbsUa = {"хотіти", "подобатись", "потребувати", "робити", "жити", "працювати", "знати", "отримувати", "бачити", "чути"};
+    static final String [] verbsUa = {"хотіти", "подобатись", "потребувати", "робити",
+            "жити", "працювати", "знати", "отримувати", "бачити", "чути", "МОГТИ", "МОЖЕ", "ПОВИНЕН"};
 
     public Verbs(){}
     public Verbs(String arg){
