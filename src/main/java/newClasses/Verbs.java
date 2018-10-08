@@ -1,8 +1,18 @@
 package newClasses;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Verbs {
-   static final String [] verbsEngl = {"go", "work","want"};
-   static final String [] verbsUa = {"йти", "працювати","хотіти"};
+   static final String [] verbsEngl = {"want", "like","need", "do", "live", "work", "know", "get", "see", "hear"};
+
+   Map mapGo = new HashMap();
+
+    public Map getMapGo() {
+        return mapGo;
+    }
+
+    static final String [] verbsUa = {"хотіти", "подобатись", "потребувати", "робити", "жити", "працювати", "знати", "отримувати", "бачити", "чути"};
 
     public Verbs(){}
     public Verbs(String arg){
