@@ -11,8 +11,8 @@ public class Verb extends Word {
         return infinitiveVerb;
     }
 
-    @Override
-    public String toString() {
-        return "v";
+    public static String returnVerbPlusS(String verb) {
+        String verbPlusS = String.valueOf(new StringBuilder(verb).append('s'));
+        return verbPlusS;
     }
 }

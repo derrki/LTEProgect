@@ -1,7 +1,10 @@
 package newClasses;
 
+import model.Verb;
+
 public class Main {
     public static void main(String[] args) {
+
 
         String[] pronouns = Pronouns.getPronounsEngl();
         String[] verbs = Verbs.getVerb();
@@ -17,11 +20,9 @@ public class Main {
             j = 0;
             for (String verb : verbs) {
 
-                if(isaBoolean(verb) && pronoun.equals("he") || pronoun.equals("she") || pronoun.equals("it")){
-                    StringBuilder verbStringBuilder = new StringBuilder(verb);
-                    verb = String.valueOf(verbStringBuilder.append('s'));
+                if(isaBoolean(verb) && pronoun.equals("he") || pronoun.equals("she") || pronoun.equals("it")) {
+                    Verb.returnVerbPlusS(verb);
                 }
-
                 String resultEngl = PresentSimpleClass.getSentensEngl(pronoun, verb);
                 String resultUa = PresentSimpleClass.getSentensEngl(pronounsUa[i], verbsUa[j]);
 
@@ -30,7 +31,6 @@ public class Main {
             }
             i++;
         }
-
     }
 
     private static boolean isaBoolean(String verb) {

@@ -1,3 +1,5 @@
+package model;
+
 import model.Verb;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -15,10 +17,10 @@ public class TestVerbClass {
         assertEquals(expectedVerb, actualVerb);
     }
 
-//    @Test
-//    public void test_add_ending_verb_s(){
-//        String expectedVerb = "goes";
-//        String actualVerb = verb.returnEndingVerbS("go");
-//        assertEquals(expectedVerb, actualVerb);
-//    }
+    @Test
+    public void test_add_ending_verb_s(){
+        String expectedVerb = "wants";
+        String actualVerb = Verb.returnVerbPlusS(verb.getValueEnglish());
+        assertEquals(expectedVerb, actualVerb);
+    }
 }
