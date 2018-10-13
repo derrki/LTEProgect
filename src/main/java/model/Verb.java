@@ -1,9 +1,10 @@
 package model;
 
-public class Verb extends WordClass {
+public class Verb extends Word {
 
-    public Verb (){}
-
+    public Verb(String valueEnglish, String valueUkrainian) {
+        super(valueEnglish, valueUkrainian);
+    }
 
     public String returnVerbInTheInfinitive(String verb) {
         String infinitiveVerb = String.valueOf(new StringBuilder("to ").append(verb));

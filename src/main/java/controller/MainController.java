@@ -1,16 +1,5 @@
 package controller;
 
-import model.EnglishWord;
-import model.Pronoun;
-import model.UkrainianWord;
-import model.Word;
-
-import testMethod.LearningArrays;
-import view.Console;
-import view.Viev;
-
-import java.util.Arrays;
-
 public class MainController {
     public static void main(String[] args) {
 

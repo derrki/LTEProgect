@@ -7,7 +7,4 @@ public class Sentence {
 
     public Sentence(){}
 
-   public String sentenseToUpperCase(model.Pronoun pronoun, Verb verb) {
-        return pronoun.getValue() + " " + verb.getValue();
-   }
 }

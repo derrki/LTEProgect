@@ -6,12 +6,12 @@ import static junit.framework.Assert.assertEquals;
 
 public class TestVerbClass {
 
-    Verb verb = new Verb();
+    Verb verb = new Verb("want", "хотіти");
 
     @Test
     public void test_return_of_the_verb_in_the_infinitive(){
         String expectedVerb = "to want";
-        String actualVerb = verb.returnVerbInTheInfinitive("want");
+        String actualVerb = verb.returnVerbInTheInfinitive(verb.getValueEnglish());
         assertEquals(expectedVerb, actualVerb);
     }
 
