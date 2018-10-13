@@ -2,8 +2,11 @@ package model;
 
 public class Sentence {
 
+
     Pronoun pronoun;
     Verb verb;
+
+
 
     public Sentence(Pronoun pronoun, Verb verb) {
         this.pronoun = pronoun;

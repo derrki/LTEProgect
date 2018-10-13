@@ -15,4 +15,10 @@ public class Verb extends Word {
         String verbPlusS = String.valueOf(new StringBuilder(verb).append('s'));
         return verbPlusS;
     }
+
+    @Override
+    public String toString() {
+        String theInfinitive = returnVerbInTheInfinitive(getValueEnglish());
+        return "Verb{" + theInfinitive + " - " + getValueUkrainian() + "}";
+    }
 }
