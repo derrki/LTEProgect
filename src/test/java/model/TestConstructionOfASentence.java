@@ -18,7 +18,7 @@ public class TestConstructionOfASentence {
     @Test
     public void test_build_a_sentence_with_two_words() {
         String expectedSentens = "You want";
-        String actualSentens = sentense.buildSimpleSentens(pronoun.getValueEnglish(), verb.getValueEnglish());
+        String actualSentens = sentense.buildSimpleSentens(pronoun, verb);
         assertEquals(expectedSentens, actualSentens);
     }
 }

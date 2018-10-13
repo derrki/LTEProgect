@@ -6,6 +6,10 @@ public class Pronoun extends Word {
         super(valueEnglish, valueUkrainian);
     }
 
+    public String getValueEnglish() {
+        return retutnIWidthCapitalLeters(super.getValueEnglish());
+    }
+
     public String retutnIWidthCapitalLeters(String value) {
 
         if (value == "i" || value == "I") {
@@ -13,5 +17,11 @@ public class Pronoun extends Word {
         } else {
             return value;
         }
+    }
+
+    @Override
+    public String toString() {
+        String thePersonalPronoun = retutnIWidthCapitalLeters(getValueEnglish());
+        return "Pronoun {" + thePersonalPronoun + " - " + getValueUkrainian() + "}";
     }
 }

@@ -19,6 +19,6 @@ public class Verb extends Word {
     @Override
     public String toString() {
         String theInfinitive = returnVerbInTheInfinitive(getValueEnglish());
-        return "Verb{" + theInfinitive + " - " + getValueUkrainian() + "}";
+        return "Verb {" + theInfinitive + " - " + getValueUkrainian() + "}";
     }
 }
