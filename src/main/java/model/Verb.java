@@ -1,5 +1,8 @@
 package model;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Verb extends Word {
 
     public Verb(String valueEnglish, String valueUkrainian) {

@@ -20,12 +20,12 @@ public class MainController {
         verbs[8] = new Verb("see", "бачити");
         verbs[9] = new Verb("hear", "чути");
 
-        for (Verb mVerb : verbs) {
-            System.out.println(mVerb);
-        }
+//        for (Verb mVerb : verbs) {
+//            System.out.println(mVerb);
+//        }
 
         Pronoun[] pronouns = new Pronoun[8];
-        pronouns[0] = new Pronoun("i","я");
+        pronouns[0] = new Pronoun("he","я");
         pronouns[1] = new Pronoun("you","ти");
         pronouns[2] = new Pronoun("we","ми");
         pronouns[3] = new Pronoun("they","вони");
@@ -34,9 +34,9 @@ public class MainController {
         pronouns[6] = new Pronoun("it","воно");
         pronouns[7] = new Pronoun("you","ви");
 
-        for (Pronoun mPronoun: pronouns) {
-            System.out.println(mPronoun);
-        }
+//        for (Pronoun mPronoun: pronouns) {
+//            System.out.println(mPronoun);
+//        }
 
         String[] stringSentences = new String[10];
         Sentence simpleSentens;
@@ -47,9 +47,9 @@ public class MainController {
         for (Pronoun pronoun : pronouns) {
             j = 0;
             for (Verb verb : verbs) {
-
-                if(isaBoolean(verb.getValueEnglish()) && pronoun.equals("he") || pronoun.equals("she") || pronoun.equals("it")) {
-                    Verb.returnVerbPlusS(verb.getValueEnglish());
+                //if(isaBoolean(verb.getValueEnglish()) && pronoun.equals("he") || pronoun.equals("she") || pronoun.equals("it")) {
+                if(pronoun.getValueEnglish().equals("he") || pronoun.getValueEnglish().equals("she") || pronoun.getValueEnglish().equals("it")) {
+                  Verb.returnVerbPlusS(verb.getValueEnglish());
                 }
                 simpleSentens = new Sentence(pronoun, verb);
                 stringSentences[i] = simpleSentens.buildSimpleSentens(pronoun, verb);

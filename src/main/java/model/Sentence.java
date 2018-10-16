@@ -2,7 +2,6 @@ package model;
 
 public class Sentence {
 
-
     Pronoun pronoun;
     Verb verb;
     String resultSentens;
