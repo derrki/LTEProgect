@@ -5,15 +5,24 @@ import model.Verb;
 public class Words {
     private static String value;
 
-    static char[] fromWordToCharacter(String valueWord){
-        char[] charsWord;
-        charsWord = valueWord.toCharArray();
-        return charsWord;
-    }
+    public String returnTwoEndingLettersOfWord(String valueWord){
+        char[] charsWord = valueWord.toCharArray();
+        if (charsWord.length <= 2){
+            return valueWord;
+        } else {
+        String result = String.valueOf(charsWord[charsWord.length-2]);
+        result += charsWord[charsWord.length-1];
+        return result;
+        }
+     }
 
-    public String returnCorrectEndingOfWord(Verb verbWord){
-
-          String result = String.valueOf(new StringBuilder(verbWord.getValueEnglish()).append('s'));
-          return result;
-    }
+//    public String returnCorrectEndingOfWord(Verb verbWord){
+//
+//        char[]
+//
+//        s, -ss, -sh, -ch, -tch, -x, -z, -zz,
+//
+//          String result = String.valueOf(new StringBuilder(verbWord.getValueEnglish()).append('s'));
+//          return result;
+//    }
 }
