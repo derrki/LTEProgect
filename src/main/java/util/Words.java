@@ -16,13 +16,20 @@ public class Words {
         }
      }
 
-//    public String returnCorrectEndingOfWord(Verb verbWord){
-//
-//        char[]
-//
-//        s, -ss, -sh, -ch, -tch, -x, -z, -zz,
-//
-//          String result = String.valueOf(new StringBuilder(verbWord.getValueEnglish()).append('s'));
-//          return result;
-//    }
+    public String returnCorrectEndingOfWord(Verb verbWord){
+
+       if((returnTwoEndingLettersOfWord(verbWord.getValueEnglish()).equals("s") ||
+          (returnTwoEndingLettersOfWord(verbWord.getValueEnglish()).equals("ss") ||
+          (returnTwoEndingLettersOfWord(verbWord.getValueEnglish()).equals("sh") ||
+          (returnTwoEndingLettersOfWord(verbWord.getValueEnglish()).equals("ch") ||
+          (returnTwoEndingLettersOfWord(verbWord.getValueEnglish()).equals("x") ||
+          (returnTwoEndingLettersOfWord(verbWord.getValueEnglish()).equals("z") ||
+          (returnTwoEndingLettersOfWord(verbWord.getValueEnglish()).equals("zz"))))))))){
+
+              return String.valueOf(new StringBuilder(verbWord.getValueEnglish()).append('e').append('s'));
+        } else {
+           String result = String.valueOf(new StringBuilder(verbWord.getValueEnglish()).append('s'));
+           return result;
+       }
+    }
 }
