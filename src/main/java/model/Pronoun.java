@@ -1,24 +1,27 @@
 package model;
 
-public class Pronoun extends WordClass{
+public class Pronoun extends Word {
 
-    private String value;
-    private String translation;
+    public Pronoun(String valueEnglish, String valueUkrainian) {
+        super(valueEnglish, valueUkrainian);
+    }
 
-    public Pronoun(EnglishWord englishWord ,UkrainianWord ukrainianWord){
-        value = englishWord.getValue();
-        translation = ukrainianWord.getValue();
+    public String getValueEnglish() {
+        return retutnIWidthCapitalLeters(super.getValueEnglish());
+    }
+
+    public String retutnIWidthCapitalLeters(String value) {
+
+        if (value == "i" || value == "I") {
+            return "I";
+        } else {
+            return value;
+        }
     }
 
     @Override
     public String toString() {
-        return "prn";
+        String thePersonalPronoun = retutnIWidthCapitalLeters(getValueEnglish());
+        return "Pronoun {" + thePersonalPronoun + " - " + getValueUkrainian() + "}";
     }
-//    public String retutnIWidthCapitalLeters() {
-//        if (super.getEnglishWord().toString() == "i" || super.getEnglishWord().toString() == "I"){
-//            return "I";
-//        } else {
-//            return super.getEnglishWord().toString();
-//        }
-//    }
 }
